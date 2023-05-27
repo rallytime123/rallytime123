@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Al Amin Grocery Store - Dairies Products</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+  body {
+    background-image: url("dairybg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  /*text total price ubah pi tengah. Saja tambah inline dgn internal css bgi cukup syarat rubric hehe*/
+  h3 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!--Terpaksa tukar color h1 pastu tambah outline text sbb background kacau visibility-->
+    <h1 style="color: rgb(205, 240, 65); text-shadow: 4px 2px 4px rgba(5, 5, 5, 0.972);">
+      <span class="dairy-icon dairy-highlight">&#x1F95B;</span>
+       Dairy Product</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Milk</td>
+        <td>RM0.50</td>
+        <td><img src="milk.jpg" alt="Milk" width="100" height="100"></td>
+        <td><button onclick="addToCart(5)">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Cheese</td>
+        <td>RM0.30</td>
+        <td><img src="cheese.jpg" alt="Cheese" width="100" height="100"></td>
+        <td><button onclick="addToCart(6)">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Butter</td>
+        <td>RM0.70</td>
+        <td><img src="butter1.jpg" alt="Butter" width="100" height="100"></td>
+        <td><button onclick="addToCart(7)">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Ice Cream</td>
+        <td>RM1.20</td>
+        <td><img src="icecream.jpg" alt="Ice Cream" width="100" height="100"></td>
+        <td><button onclick="addToCart(8)">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Yogurt</td>
+        <td>RM2.50</td>
+        <td><img src="yogurt.jpg" alt="Yogurt" width="100" height="100"></td>
+        <td><button onclick="addToCart(9)">Add to Cart</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <!--Ubah text color dgn tambah outline bgi more visible-->
+  <h3 style="color: rgb(254, 251, 251); text-shadow: 4px 2px 4px rgba(4, 3, 3, 0.972);">Total Price: <span id="total-price">0.00</span></h3>
+  <a href="index.html">Back to Home</a>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery Store</title>
+  <!--Inline and internal CSS-->
+  <style>
+    body {
+      background-color: chartreuse;
+      background-image: url("bgimage1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      padding: 5px 10px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+
+    li a:hover {
+      background-color: #999;
+      color: #fff;
+    }
+    .play-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .play-button button {
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #333;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Welcome to Al Amin Grocery Store!</h1>
+  <p>Click on the links below to browse our products:</p>
+  <ul>
+    <li><a href="fruits.html">Fruits</a></li>
+    <li><a href="vegetables.html">Vegetables</a></li>
+    <li><a href="dairy.html">Dairy</a></li>
+    <li><a href="register.html">Membership</a></li>
+  </ul>
+  <audio id="background-audio" src="bgmusichome.mp3"loop></audio>
+  <div class="play-button">
+    <button onclick="playAudio()">&#9835;</button>
+  </div>
+  
+  <script>
+    var audio = document.getElementById("background-audio");
+    var isPlaying = false;
+
+    function playAudio() {
+      if (!isPlaying) {
+        audio.play();
+        isPlaying = true;
+      } else {
+        audio.pause();
+        isPlaying = false;
+      }
+    }
+  </script>
+</body>
+</html>
